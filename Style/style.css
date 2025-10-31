@@ -16,7 +16,7 @@
 
 /* HEADER */
 
-header {
+.header-section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -29,7 +29,7 @@ header {
   grid-row: 1 / span 2;
 }
 
-.heading-1 {
+.header-title {
   align-self: center;
   justify-self: center;
   font-size: 4rem;
@@ -53,7 +53,54 @@ header {
 
 /* HERO */
 
-.hero-box-1 {
+.hero-section {
   display: grid;
-  grid-template-columns: 1;
+  grid-template-columns: 1fr;
+  place-items: center;
+  position: relative;
+}
+
+.hero-image {
+  z-index: 1;
+  width: 100vw;
+}
+
+.hero-title {
+  color: #fff;
+  font-size: 3rem;
+  position: absolute;
+  z-index: 2;
+}
+
+/* MAIN */
+
+.main-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.main-box-1 {
+  background-color: var(--light-purple);
+  grid-column: 1 / span 1;
+}
+
+.main-box-2 {
+  background-color: var(--purple);
+  grid-column: 2 / span 1;
+}
+
+.main-box-3 {
+  background-color: var(--darkest-purple);
+  color: #fff;
+  grid-column: 1 / span 2;
+}
+
+.main-title {
+  align-self: center;
+  justify-self: center;
+}
+
+.main-box-4 {
+  background-color: var(--black-purple);
+  grid-column: 3 / span 2;
 }
